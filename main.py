@@ -18,12 +18,12 @@ list1 = [2,5,77,74,3,6]
 list1.append ('6,3,74,77,5,20')
 print(list1)
 
-Print("Numbers Squared:")
+print("Numbers Squared:")
 Numbers = [2, 5, 77, 74, 3,6]
-
-squared_numbers = [number ** 2 for number in numbers]
-
+squared_numbers = [number ** 2 for number in Numbers]
 print(squared_numbers)
+
+
 
 
 
