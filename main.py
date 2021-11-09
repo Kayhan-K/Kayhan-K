@@ -1,38 +1,35 @@
-print("Basics:")
-List = ["Kayhan" , "KING" , "said", "hello","$"]
-print(List[0])
-print(List[2])
-print(List[3])
+file=open("WorkingWithFiles.txt" ,'w')
+file.write("This is an append")
+file.close()
 
-List1 = [2,5,77,74,3,6]
-print("List Number 1:")
-print (List1)
+file=open("WorkingWithFiles.txt" ,'r')
+content=file.read()
+print(content)
+file.close
 
-List1 = [2,5,77,74,3,6]
-print("List Number 1 Reversed:")
-List1.reverse()
-print (List1)
+file=open("demo.txt",'a')
+file.write("This is going to be 2nd Append")
+file.close
 
-print("Concatenated list:")
-list1 = [2,5,77,74,3,6]
-list1.append ('6,3,74,77,5,20')
-print(list1)
+data = 'some data to save'
 
-print("Numbers Squared:")
-Numbers = [2, 5, 77, 74, 3,6]
-squared_numbers = [number ** 2 for number in Numbers]
-print(squared_numbers)
+def read():
+  with open('data.txt','r') as file:
+    file.close()
 
+def write():
+  with open('data.txt','w') as file:
+    file.write(data + '\n')
+    file.close()
 
 
+def append():
+  with open('data.txt', 'a') as file:
+    file.write(data + '\n')
+    file.close()
 
+#difference between write and append ~ append = adding information on to the end of the existing text.With write all previous work will be overwritten.
 
-
-
-
-
-
-
-
+#a+ = Both writing and reading file in append mode , it adds a reading file to the existing a . a = writing file here it is in append mode.
 
 
