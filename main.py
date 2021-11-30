@@ -1,0 +1,38 @@
+print("ProManager - Project managing software .")
+
+def menu():
+  print("1. Enter a new website\n" +
+        "2. Enter a new app\n" +
+        "3. Enter a new game\n"
+        "4. Display the website details\n"
+        "5. Display the app details\n"
+        "6. Display the game details\n"
+        "7. Help\n"
+        "8. Exit\n " )
+
+  option = int(input("Which option would you like to proceed with  ?")) 
+  
+  if option == 1:
+    new_website()
+  elif(option == 2):
+    new_app()
+
+
+def new_website():
+  print(" - Website ID : Cyborg -")
+  print(" - Server Name: AlphaCoders.Inc")
+  print(" - Number of pages: 21")
+
+def new_app():
+  print(" - Mobile App ID : Infinite -")
+  print(" - Server Name :AlphaCoders.inc ")
+
+def existing_web():
+ 
+  pass
+
+
+
+
+
+menu()
